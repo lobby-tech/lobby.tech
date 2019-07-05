@@ -1,11 +1,10 @@
 title: Lobby - Redefinindo prédios comerciais
-email: quero@lobby.tech
 description: >-
   Redefinindo prédios comerciais. Seu prédio é muito mais do que só um espaço físico.
-url: ""
 sass:
   style: compressed
 host: 0.0.0.0
 port: 4000
 baseurl: ""
+url: "https://lobby.tech/"
 encoding: "utf-8"
