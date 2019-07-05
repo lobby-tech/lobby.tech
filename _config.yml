@@ -1,6 +1,4 @@
 title: Lobby - Redefinindo prédios comerciais
-description: >-
-  Redefinindo prédios comerciais. Seu prédio é muito mais do que só um espaço físico.
 sass:
   style: compressed
 host: 0.0.0.0
