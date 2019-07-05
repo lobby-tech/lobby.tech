@@ -1,0 +1,76 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.header-logo {
+  width: 110px;
+}
+
+.header-logo--sm {
+  width: 70px;
+}
+
+.header-headline {
+  position: relative;
+  z-index: 10;
+}
+
+.header-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+}
+
+@media (min-width: 320px) {
+  .header video {
+    left: -65%;
+  }
+}
+
+@media (min-width: 480px) {
+  .header video {
+    left: -25%;
+  }
+}
+
+@media (min-width: 600px) {
+  .header video {
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .font-title-header {
+    font-size: $extra-extra-large;
+    line-height: $font-xl-h;
+  }
+  .header video {
+    top: 0;
+  }
+  .header-logo {
+    width: 140px;
+  }
+  .header-headline {
+    margin-top: 70px;
+    margin-bottom: 60px;
+  }
+  .header-text {
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+}

@@ -1,0 +1,33 @@
+.font--white {
+  color: #FFF;
+}
+
+.font--sm {
+  font-size: $small;
+  line-height: $font-sm-h;
+}
+
+.font--md {
+  font-size: $medium;
+  line-height: $font-md-h;
+}
+
+.font--lg {
+  font-size: $large;
+  line-height: $font-lg-h;
+}
+
+.font--xl {
+  font-size: $extra-large;
+  line-height: $font-xl-h;
+}
+
+.font--xxl {
+  font-size: $extra-extra-large;
+  line-height: $font-xl-h;
+  font-weight: bold;
+}
+
+.font-title {
+  font-family: 'Bodoni', sans-serif;
+}

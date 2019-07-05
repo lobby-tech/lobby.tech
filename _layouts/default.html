@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Lobby">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/assets/images/apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Lobby">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="title" content="{{ page.title }}">
+    <meta name="author" content="Lobby">
+    <meta name="description" content="{{ page.description }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="/assets/css/application.css" type="text/css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+  </head>
+  <body>
+    {{ content }}
+    {% if jekyll.environment == "production" %}
+      {% include google_scripts.html %}
+    {% endif %}
+  </body>
+</html>
