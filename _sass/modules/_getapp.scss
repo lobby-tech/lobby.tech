@@ -1,6 +1,9 @@
 .getapp {
   &__container {
-    height: 100vh;
+    min-height: 90vh;
+    @media (min-width: 576px) {
+      height: 100vh;
+    }
   }
 
   &__content-container {
@@ -24,11 +27,18 @@
   }
 
   &__smartphone {
-    max-height: 50vh;
+    max-height: 300px;
+    max-height: 45vh;
 
     @media (min-width: 576px) {
-      max-height: 70vh;
       max-height: 800px;
+      max-height: 70vh;
+    }
+  }
+
+  &__badges {
+    @media (min-width: 576px) {
+      height: 100%;
     }
   }
 
