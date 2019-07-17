@@ -3,6 +3,12 @@
     height: 100vh;
   }
 
+  &__content-container {
+    @media (max-width: 576px) {
+      flex: 1;
+    }
+  }
+
   &__text {
     @media (min-width: 576px) {
       font-size: 1.6rem;
@@ -18,7 +24,7 @@
   }
 
   &__smartphone {
-    max-height: 30vh;
+    max-height: 50vh;
 
     @media (min-width: 576px) {
       max-height: 70vh;
