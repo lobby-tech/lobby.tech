@@ -1,10 +1,13 @@
 .getapp {
   &__container {
-    height: 100vh;
+    // height: 100vh;
+    flex: 1;
   }
 
   &__content-container {
     @media (max-width: 576px) {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
       flex: 1;
     }
   }
@@ -24,15 +27,19 @@
   }
 
   &__smartphone {
-    max-height: 50vh;
+    // max-height: 50vh;
+    flex: 1;
 
     @media (min-width: 576px) {
-      max-height: 70vh;
+      // max-height: 70vh;
     }
   }
 
   &__store-badge {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     max-width: 300px;
+    width: 300px;
   }
 }
