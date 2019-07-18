@@ -43,12 +43,13 @@
   }
 
   &__store-badge-container {
-    max-width: 300px;
+    flex: 1;
+    max-width: 250px;
   }
 
   &__storage-badge-img {
     @media (min-width: 576px) {
-      max-width: 300px;
+      max-width: 250px;
     }
   }
 }
