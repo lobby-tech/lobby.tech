@@ -19,7 +19,7 @@
     <meta name="description" content="{{page.description}}">
     <meta property="og:title" content="Lobby">
     <meta property="og:description" content="{{ page.description }}">
-    <meta property="og:url" content="{{site.url}}/{{page.path | replace: '/index.html', ''}}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
     <meta property="og:site_name" content="Lobby Tech">
     <meta property="og:image" content="/assets/images/icon.png">
     <meta property="og:type" content="website">
