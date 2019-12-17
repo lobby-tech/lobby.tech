@@ -1,0 +1,90 @@
+---
+title: Trocar senha - Lobby
+description: Descubra eventos, experiências e acesse serviços úteis onde trabalha
+layout: default
+---
+<div class="d-flex container justify-content-center">
+  <div class="align-items-center text-center header-logo--lg mt-5">
+    <img src="/assets/images/icon-reverse.png" class="mb-4" alt="Lobby">
+    <h1 class="h6 text-center mb-4" id="title">Carregando...</h1>
+    <form id="form" class="invisible">
+      <input type="password" class="form-control form-control-md mb-2" placeholder="Informe a nova senha">
+      <input type="password" class="form-control form-control-md" placeholder="Confirmar a nova senha">
+      <button class="btn btn-lg mt-4 btn-primary btn-block" type="submit">Alterar senha</button>
+    </form>
+  </div>
+</div>
+<script>
+  (() => {
+    const API_URL = 'https://api.lobby.tech/accounts';
+    const MIN_PASSWORD = 6;
+    const title = document.querySelector('#title');
+    const form = document.querySelector('#form');
+    const queryData = new URLSearchParams(window.location.search);
+
+    function initVerify() {
+      const opts = {
+        body: JSON.stringify({
+          id: queryData.get('id'),
+          code: queryData.get('code')
+        }),
+        method: 'post',
+        headers: { 'Content-type': 'application/json' }
+      };
+      fetch(`${API_URL}/password/verify`, opts)
+        .then((response) => {
+          if (response.ok) {
+            title.textContent = 'Informe a nova senha';
+            form.classList.remove('invisible');
+          } else {
+            window.location = '/404';
+          }
+        })
+      ;
+    }
+
+    function changePassword(e) {
+      e.preventDefault();
+      const [newPassword, confirmPassword] = form.querySelectorAll('input[type="password"]');
+      if (newPassword.value && newPassword.value.length >= MIN_PASSWORD) {
+        if (newPassword.value === confirmPassword.value) {
+          title.textContent = 'Aguarde...';
+          title.classList.remove('text-danger');
+          const opts = {
+            body: JSON.stringify({
+              id: queryData.get('id'),
+              code: queryData.get('code'),
+              password: newPassword.value
+            }),
+            method: 'put',
+            headers: { 'Content-type': 'application/json' }
+          };
+          fetch(`${API_URL}/password/change`, opts)
+            .then((response) => {
+              if (response.ok) {
+                title.textContent = 'Senha alterada com sucesso';
+                form.classList.add('invisible');
+                const redirectUrl = queryData.get('redirect_url');
+                if (redirectUrl) {
+                  window.location = redirectUrl;
+                }
+              } else {
+                title.textContent = 'Ocorreu um erro ao alterar senha';
+                title.classList.add('text-danger');
+              }
+            })
+          ;
+        } else {
+          title.textContent = 'As senhas estão diferentes';
+          title.classList.add('text-danger');
+        }
+      } else {
+        title.textContent = `Informe mínimo de ${MIN_PASSWORD} dígitos`;
+        title.classList.add('text-danger');
+      }
+    }
+    
+    form.addEventListener('submit', changePassword);
+    initVerify();
+  })();
+</script>
