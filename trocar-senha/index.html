@@ -49,8 +49,12 @@ layout: default
       const [newPassword, confirmPassword] = form.querySelectorAll('input[type="password"]');
       if (newPassword.value && newPassword.value.length >= MIN_PASSWORD) {
         if (newPassword.value === confirmPassword.value) {
+          const button = form.querySelector('button[type="submit"]');
           title.textContent = 'Aguarde...';
           title.classList.remove('text-danger');
+          newPassword.setAttribute('disabled', 'disabled');
+          confirmPassword.setAttribute('disabled', 'disabled');
+          button.setAttribute('disabled', 'disabled');
           const body = JSON.stringify({
             id: queryData.get('id'),
             code: queryData.get('code'),
@@ -64,13 +68,20 @@ layout: default
           fetch(`${API_URL}/password/change`, opts)
             .then((response) => {
               if (response.ok) {
-                title.textContent = 'Senha alterada com sucesso';
                 form.classList.add('invisible');
                 const redirectUrl = queryData.get('redirect_url');
                 if (redirectUrl) {
-                  window.location = redirectUrl;
+                  title.textContent = 'Senha alterada com sucesso, aguarde o redirecionamento...';
+                  setTimeout(() => {
+                    window.location = redirectUrl;
+                  }, 3000);
+                } else {
+                  title.textContent = 'Senha alterada com sucesso, você pode fechar essa página.';
                 }
               } else {
+                newPassword.removeAttribute('disabled');
+                confirmPassword.removeAttribute('disabled');
+                button.removeAttribute('disabled');
                 title.textContent = 'Ocorreu um erro ao alterar senha';
                 title.classList.add('text-danger');
               }
