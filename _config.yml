@@ -6,3 +6,4 @@ port: 4000
 baseurl: ""
 url: "https://lobby.tech/"
 encoding: "utf-8"
+include: ".well-known"
