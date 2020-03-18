@@ -40,6 +40,11 @@
   height: auto;
 }
 
+.font-btn-media {
+  font-size: $medium;
+  line-height: $font-md-h;
+}
+
 @media (min-width: 320px) {
   .header video {
     left: -65%;
@@ -62,6 +67,10 @@
   .font-title-header {
     font-size: $extra-extra-large;
     line-height: $font-xl-h;
+  }
+  .font-btn-media {
+    font-size: $large;
+    line-height: $font-lg-h;
   }
   .header video {
     top: 0;
