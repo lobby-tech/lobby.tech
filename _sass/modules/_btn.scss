@@ -1,7 +1,12 @@
 .btn-main {
   display: inline-block;
   border-radius: 8px;
-  background-color: #22007F;
-  background-image: -webkit-linear-gradient(-17deg, #EC5855 25%, #22007F 25%);
+  background-color: #00F8C9;
+  /*background-image: -webkit-linear-gradient(-17deg, #EC5855 25%, #22007F 25%);*/
   padding: 15px 30px;
+}
+
+.btn-main,
+.btn-main:hover {
+  color: #22007F;
 }
