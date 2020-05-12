@@ -409,7 +409,7 @@ header {
 
   .community {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     padding: 0;
   }
@@ -423,6 +423,11 @@ header {
     width: 100vw;
     max-width: 35rem;
     margin: 3rem 0 .5rem 0;
+  }
+
+  .footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
   }
 
   .footer__container {
