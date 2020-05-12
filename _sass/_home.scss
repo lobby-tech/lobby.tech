@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -218,6 +222,11 @@ header {
   width: 35vw;
   min-width: 35rem;
   margin: 3rem 0 3rem 8%;
+}
+
+.footer {
+  margin-top: 100px;
+  padding-bottom: 50px;
 }
 
 .footer__container {
