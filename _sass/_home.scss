@@ -95,7 +95,7 @@ header {
 
 .billboard__content {
   padding: 0 0 0 8vw;
-  margin: 0;
+  margin: 0 0 60px 0;
 }
 
 .billboard__photo {
@@ -308,6 +308,10 @@ header {
   .button--blue {
     font-size: 15px;
     padding: .8em 2.4rem;
+  }
+
+  .billboard__content {
+    margin: 0 0 20px 0;
   }
 
   .billboard__photo {
