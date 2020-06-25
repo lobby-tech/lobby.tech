@@ -56,16 +56,36 @@ header {
   box-shadow: 0.2px 0.2px 3px rgba(102, 102, 102, 0.712);
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header__logo {
   width: 7rem;
 }
 
+.header__menu {
+  width: 100%;
+  text-align: right;
+}
+
+.header__menu-item {
+  display: inline-block;
+  font-size: 14px;
+  color: #22007f;
+  font-weight: bold;
+  outline: none;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+.header__menu-item:hover {
+  cursor: pointer;
+  color: #1a0457;
+}
+
 .header__sign-in {
-  position: absolute;
-  right: 8%;
-  width: 8rem;
+  display: inline-block;
   font-size: 14px;
   border-radius: 25px;
   border: 1.2px solid #22007f;
@@ -74,7 +94,7 @@ header {
   font-weight: bold;
   outline: none;
   text-align: center;
-  padding: 0.5em 0;
+  padding: 0.5em 2em;
   text-decoration: none;
 }
 
@@ -339,10 +359,6 @@ header {
   /*header*/
   .header__logo {
     width: 7.5rem;
-  }
-
-  .header__sign-in {
-    width: 7.2rem;
   }
 
   /*billboard*/
