@@ -1,0 +1,20 @@
+.section-three {
+  position: relative;
+  border-radius: 8px;
+  margin: 100px 0;
+  padding: 50px 50px 30px 50px;
+  background-color: #F4F2F9;
+}
+
+.section-three__btn {
+  display: inline-block;
+  margin-top: 20px
+}
+
+@media (min-width: 992px) {
+  .section-three__btn {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+  }
+}

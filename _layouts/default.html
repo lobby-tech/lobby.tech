@@ -24,14 +24,16 @@
     <meta property="og:image" content="/assets/images/og-banner.png">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-    <link rel="stylesheet" href="/assets/css/application.css" type="text/css">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" type="text/css">
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
   </head>
   <body>
     {{ content }}
+
     {% if jekyll.environment == "production" %}
       {% include google_scripts.html %}
     {% endif %}
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/0aa59a41-d9df-4bec-97d4-84fb43690cac-loader.js"></script>
   </body>
 </html>

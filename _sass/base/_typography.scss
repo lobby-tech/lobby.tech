@@ -1,33 +1,26 @@
-.font--white {
-  color: #FFF;
-}
-
 .font--sm {
-  font-size: $small;
-  line-height: $font-sm-h;
+  font-size: 14px;
+  line-height: 1.7em;
 }
 
 .font--md {
-  font-size: $medium;
-  line-height: $font-md-h;
+  font-size: 18px;
+  line-height: 1.5em;
 }
 
 .font--lg {
-  font-size: $large;
-  line-height: $font-lg-h;
+  font-size: 24px;
+  line-height: 1.4em;
 }
 
 .font--xl {
-  font-size: $extra-large;
-  line-height: $font-xl-h;
-}
-
-.font--xxl {
-  font-size: $extra-extra-large;
-  line-height: $font-xl-h;
+  font-size: 38px;
+  line-height: 1.3em;
   font-weight: bold;
 }
 
-.font-title {
-  font-family: 'RedHatDisplay', sans-serif;
+.font--xxl {
+  font-size: 48px;
+  line-height: 1.2em;
+  font-weight: bold;
 }

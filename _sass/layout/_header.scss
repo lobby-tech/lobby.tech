@@ -1,86 +1,29 @@
 .header {
-  position: relative;
-  overflow: hidden;
-  background-color: #E1FFFA;
+  margin: 15px auto;
 }
 
-.header-logo {
-  width: 110px;
+.header__logo {
+  width: 150px;
 }
 
-.header-logo--sm {
-  width: 70px;
+.header__menu {
+  float: right;
+  margin: 0;
+  padding: 0;
 }
 
-.header-logo--lg {
-  width: 250px;
+.header__menu li {
+  float: left;
+  list-style: none;
+  padding: 10px 20px 0;
 }
 
-.header-headline {
-  position: relative;
-  z-index: 10;
+.header__menu--mobile {
+  display: none;
 }
 
-.header-text {
-  margin-top: 50px;
-}
-
-.header video {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /* Make video to at least 100% wide and tall */
-  min-width: 100%;
-  min-height: 100%;
-
-  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-  width: auto;
-  height: auto;
-}
-
-.font-btn-media {
-  font-size: $medium;
-  line-height: $font-md-h;
-}
-
-@media (min-width: 320px) {
-  .header video {
-    left: -65%;
-  }
-}
-
-@media (min-width: 480px) {
-  .header video {
-    left: -25%;
-  }
-}
-
-@media (min-width: 600px) {
-  .header video {
-    left: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .font-title-header {
-    font-size: $extra-extra-large;
-    line-height: $font-xl-h;
-  }
-  .font-btn-media {
-    font-size: $large;
-    line-height: $font-lg-h;
-  }
-  .header video {
-    top: 0;
-  }
-  .header-logo {
-    width: 140px;
-  }
-  .header-headline {
-    margin-top: 30px;
-  }
-  .header-text {
-    margin-top: 60px;
+@media (min-width: 992px) {
+  .header__menu--mobile {
+    display: list-item;
   }
 }
