@@ -1,5 +1,7 @@
 .header {
-  margin: 15px auto;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .header__logo {
@@ -7,7 +9,9 @@
 }
 
 .header__menu {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin: 0;
   padding: 0;
 }
