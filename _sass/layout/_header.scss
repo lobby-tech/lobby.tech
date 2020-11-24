@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -9,9 +8,7 @@
 }
 
 .header__menu {
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: right;
   margin: 0;
   padding: 0;
 }
