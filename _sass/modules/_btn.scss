@@ -11,3 +11,18 @@
   color: white;
   text-decoration: none;
 }
+
+.btn--margin {
+  display: inline-block;
+  margin: 0 10px 10px;
+}
+
+.btn--secondary {
+  background-color: white;
+  color: #220081;
+}
+
+.btn--secondary:hover {
+  background-color: #E2DBF5;
+  color: #220081;
+}
