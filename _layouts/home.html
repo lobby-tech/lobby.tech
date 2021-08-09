@@ -1,6 +1,9 @@
 <!doctype html>
 <html>
   <head>
+    {% if jekyll.environment == "production" %}
+      {% include google_scripts_head.html %}
+    {% endif %}
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
@@ -29,6 +32,10 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
   </head>
   <body>
+    {% if jekyll.environment == "production" %}
+      {% include google_scripts_body.html %}
+    {% endif %}
+
     <header class="container header">
       <a href="/">
         <img src="/assets/images/lobby-logo.png" alt="Lobby Tech logo" class="header__logo">
@@ -115,7 +122,6 @@
     </footer>
 
     {% if jekyll.environment == "production" %}
-      {% include google_scripts.html %}
       <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/0aa59a41-d9df-4bec-97d4-84fb43690cac-loader.js"></script>
     {% endif %}
   </body>

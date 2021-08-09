@@ -1,5 +1,4 @@
 User-agent: *
 
 Allow: /
-Disallow: /form
-Disallow: /trocar-senha
+Disallow: /pedido-enviado
