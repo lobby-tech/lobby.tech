@@ -20,7 +20,15 @@
 }
 
 .font--xxl {
-  font-size: 48px;
-  line-height: 1.2em;
+  font-size: 38px;
+  line-height: 1.3em;
   font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .font--xxl {
+    font-size: 48px;
+    line-height: 1.2em;
+    font-weight: bold;
+  }
 }

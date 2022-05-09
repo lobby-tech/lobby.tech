@@ -4,7 +4,7 @@
 }
 
 .header__logo {
-  width: 150px;
+  width: 130px;
 }
 
 .header__menu {
@@ -24,6 +24,10 @@
 }
 
 @media (min-width: 992px) {
+  .header__logo {
+    width: 150px;
+  }
+
   .header__menu--mobile {
     display: list-item;
   }
