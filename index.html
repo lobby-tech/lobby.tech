@@ -17,37 +17,19 @@ layout: home
           nós facilitamos todo processo pra você</h2>
         <br>
         <div class="row">
-          <div class="offset-lg-2 col-12 col-lg-4">
+          <div class="col-12">
             <p>
-              <a href="#form" class="btn">
+              <a href="https://app.lobby.tech/catalogo" class="btn js-btn-catalog">
                 Monte seu kit 🎁
               </a>
             </p>
             <br>
-          </div>
-          <div class="col-12 col-lg-4">
-            <p>
-              <a href="https://app.lobby.tech/catalogo/14a10b09-30f4-4f51-a00b-20fbef8d29c4" target="_blank">
-                <b>Ver produtos 👕</b>
-              </a>
-            </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<a id="form"></a>
-<div id="typeform-widget" class="typeform-widget" data-url="https://form.typeform.com/to/E76HeKF2?typeform-medium=embed-snippet" style="width: 100%; height: 815px;"></div>
-<script type="text/javascript">
-  (function() {
-    var params = new URLSearchParams(window.location.search);
-    var typeformWidget = document.getElementById('typeform-widget');
-    typeformWidget.setAttribute('data-url', typeformWidget.getAttribute('data-url') + '&' + params);
-  })();
-</script>
-<script>(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()</script>
 
 <section class="section-one">
   <div class="container">
@@ -148,7 +130,7 @@ layout: home
   </div>
   <br>
   <p>
-    <a href="#form" class="btn">
+    <a href="https://app.lobby.tech/catalogo" class="btn js-btn-catalog">
       Monte seu kit agora
     </a>
   </p>
@@ -303,7 +285,7 @@ layout: home
   <br>
   <br>
   <p>
-    <a href="#form" class="btn">
+    <a href="https://app.lobby.tech/catalogo" class="btn js-btn-catalog">
       Monte seu kit agora
     </a>
   </p>
@@ -354,7 +336,7 @@ layout: home
         <h1 class="font--lg">Enviar kits com sua marca ficou fácil</h1>
         <h2 class="font--xl">Monte seu kit corporativo</h2>
         <p class="section-three__btn">
-          <a href="#form" class="btn">
+          <a href="https://app.lobby.tech/catalogo" class="btn js-btn-catalog">
             Começar agora
           </a>
         </p>
@@ -365,21 +347,29 @@ layout: home
 
 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 <script type="text/javascript">
-  var typed1 = new Typed('#typed1', {
-    strings: [
-      'Brindes em Eventos',
-      'Kits de Boas-Vindas',
-      'Brindes Personalizados',
-      'Kits Corporativos',
-      'Swag Kits',
-      'Presentes para Prospects',
-      'Mimos para Clientes',
-    ],
-    backDelay: 1900,
-    typeSpeed: 60,
-    backSpeed: 1800,
-    fadeOut: true,
-    loop: true,
-    showCursor: false
-  });
+  (function() {
+    var typed1 = new Typed('#typed1', {
+      strings: [
+        'Brindes em Eventos',
+        'Kits de Boas-Vindas',
+        'Brindes Personalizados',
+        'Kits Corporativos',
+        'Swag Kits',
+        'Presentes para Prospects',
+        'Mimos para Clientes',
+      ],
+      backDelay: 1900,
+      typeSpeed: 60,
+      backSpeed: 1800,
+      fadeOut: true,
+      loop: true,
+      showCursor: false
+    });
+
+    var params = new URLSearchParams(window.location.search);
+    var btnCatalog = document.getElementsByClassName('js-btn-catalog');
+    for (i = 0; i < btnCatalog.length; i++) {
+      btnCatalog[i].setAttribute('href', btnCatalog[i].getAttribute('href') + '?' + params);
+    }
+  })();
 </script>
