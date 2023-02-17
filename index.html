@@ -19,7 +19,7 @@ layout: home
         <div class="row">
           <div class="col-12">
             <p>
-              <a href="https://app.lobby.tech/catalogo" class="btn js-btn-catalog">
+              <a href="https://app.lobby.tech/catalogo" class="btn">
                 Monte seu kit 🎁
               </a>
             </p>
@@ -130,7 +130,7 @@ layout: home
   </div>
   <br>
   <p>
-    <a href="https://app.lobby.tech/catalogo" class="btn js-btn-catalog">
+    <a href="https://app.lobby.tech/catalogo" class="btn">
       Monte seu kit agora
     </a>
   </p>
@@ -285,7 +285,7 @@ layout: home
   <br>
   <br>
   <p>
-    <a href="https://app.lobby.tech/catalogo" class="btn js-btn-catalog">
+    <a href="https://app.lobby.tech/catalogo" class="btn">
       Monte seu kit agora
     </a>
   </p>
@@ -336,7 +336,7 @@ layout: home
         <h1 class="font--lg">Enviar kits com sua marca ficou fácil</h1>
         <h2 class="font--xl">Monte seu kit corporativo</h2>
         <p class="section-three__btn">
-          <a href="https://app.lobby.tech/catalogo" class="btn js-btn-catalog">
+          <a href="https://app.lobby.tech/catalogo" class="btn">
             Começar agora
           </a>
         </p>
@@ -365,11 +365,5 @@ layout: home
       loop: true,
       showCursor: false
     });
-
-    var params = new URLSearchParams(window.location.search);
-    var btnCatalog = document.getElementsByClassName('js-btn-catalog');
-    for (i = 0; i < btnCatalog.length; i++) {
-      btnCatalog[i].setAttribute('href', btnCatalog[i].getAttribute('href') + '?' + params);
-    }
   })();
 </script>
