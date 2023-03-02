@@ -43,17 +43,75 @@
         <a href="/">
           <img src="/assets/images/lobby-logo.png" alt="Lobby Tech logo" class="header__logo">
         </a>
-        <ul class="header__menu">
-          <li class="header__menu--mobile">
-            <a href="https://wa.me/551151998230" class="js-ga4-wa-btn-site" target="_blank">
-              <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="24">
-              (11) 5199-8230
+        <ul class="header__main-menu header__menu--only-mobile">
+          <li class="header__main-menu__li">
+            <a href="#menu">
+              <b>Menu</b>
             </a>
           </li>
+        </ul>
+        <ul class="header__main-menu header__menu--mobile">
+          <li class="header__main-menu__li">
+            <a href="javascript:void(0);">
+              <b>Plataforma</b>
+            </a>
+            <ul class="header__main-submenu">
+              <li>
+                <a href="/como-funciona">
+                  <b>Como funciona</b>
+                </a>
+              </li>
+              <li>
+                <a href="/precos">
+                  <b>Preços</b>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__main-menu__li">
+            <a href="javascript:void(0);">
+              <b>Soluções</b>
+            </a>
+            <ul class="header__main-submenu">
+              <li>
+                <a href="/rh">
+                  <b>RH</b>
+                </a>
+              </li>
+              <li>
+                <a href="/marketing">
+                  <b>Marketing</b>
+                </a>
+              </li>
+              <li>
+                <a href="/Vendas">
+                  <b>Vendas</b>
+                </a>
+              </li>
+              <li>
+                <a href="/customer-success">
+                  <b>Customer Success</b>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__main-menu__li">
+            <a href="/monte-seu-kit">
+              <b>Montar kit</b>
+            </a>
+          </li>
+        </ul>
+        <ul class="header__menu">
           <li>
             <a href="https://calendly.com/caroline-460/30min" target="_blank">
               🎧
-              <b>Agendar call</b>
+              <b>Call</b>
+            </a>
+          </li>
+          <li class="header__menu--mobile">
+            <a href="https://wa.me/551151998230" class="js-ga4-wa-btn-site" target="_blank">
+              <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="24">
+              WhatsApp
             </a>
           </li>
           <li class="header__menu--mobile">
@@ -67,10 +125,45 @@
       {{ content }}
     </main>
 
+    <a id="menu"></a>
     <footer class="footer">
       <section class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <section class="col-6 col-lg-3">
+            <h2 class="font--md"><b>Plataforma</b></h2>
+            <p><a href="/como-funciona">Como funciona</a></p>
+            <p><a href="/precos">Preços</a></p>
+            <p><a href="/perguntas-frequentes">Perguntas frequentes</a></p>
+            <p><a href="https://app.lobby.tech">Login</a></p>
+            <br>
+          </section>
+          <section class="col-6 col-lg-3">
+            <h2 class="font--md"><b>Soluções</b></h2>
+            <p><a href="/rh">RH</a></p>
+            <p><a href="/marketing">Marketing</a></p>
+            <p><a href="/vendas">Vendas</a></p>
+            <p><a href="/customer-success">Customer Success</a></p>
+            <br>
+          </section>
+          <section class="col-6 col-lg-3">
+            <h2 class="font--md"><b>Empresa</b></h2>
+            <p><a href="https://blog.lobby.tech/category/case-de-sucesso/">Casos de sucesso</a></p>
+            <p><a href="/sobre-nos">Sobre nós</a></p>
+            <p><a href="/vem-pra-lobby">Vem pra Lobby</a></p>
+            <p><a href="https://blog.lobby.tech" target="_blank">Blog</a></p>
+            <p><a href="https://wa.me/551151998230" target="_blank">Contato</a></p>
+            <br>
+          </section>
+          <section class="col-6 col-lg-3">
+            <h2 class="font--md"><b>Legal</b></h2>
+            <p><a href="/politica-de-privacidade">Política de privacidade</a></p>
+            <p><a href="/termos-de-uso">Termos de uso</a></p>
+            <p><a href="/politica-de-devolucao-e-reembolso">Política de devolução e reembolso</a></p>
+            <br>
+          </section>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
             <p><a href="/"><img src="/assets/images/lobby-logo-rodape.png" alt="Lobby Tech logo"></a></p>
             <br>
             <p>Seu parceiro ideal para criar experiências memoráveis para colaboradores, clientes e parceiros</p>
@@ -80,6 +173,9 @@
                 <b>(11) 5199-8230</b>
               </a>
             </p>
+            <br>
+          </div>
+          <div class="col-lg-6" style="text-align:right">
             <p>
               <a target="_blank" href="https://www.facebook.com/lobby.tech/">
                 <img width="36" src="/assets/images/icons/Facebook.png" alt="Facebook">
@@ -93,40 +189,7 @@
                 <img width="36" src="/assets/images/icons/Instagram.png" alt="Instagram">
               </a>
             </p>
-            <br>
           </div>
-          <section class="col-6 col-lg-2">
-            <h2 class="font--md"><b>Plataforma</b></h2>
-            <p><a href="/como-funciona">Como funciona</a></p>
-            <p><a href="/precos">Preços</a></p>
-            <p><a href="/perguntas-frequentes">Perguntas frequentes</a></p>
-            <p><a href="https://app.lobby.tech">Login</a></p>
-            <br>
-          </section>
-          <section class="col-6 col-lg-2">
-            <h2 class="font--md"><b>Soluções</b></h2>
-            <p><a href="/rh">RH</a></p>
-            <p><a href="/marketing">Marketing</a></p>
-            <p><a href="/vendas">Vendas</a></p>
-            <p><a href="/customer-success">Customer Success</a></p>
-            <br>
-          </section>
-          <section class="col-6 col-lg-2">
-            <h2 class="font--md"><b>Empresa</b></h2>
-            <p><a href="https://blog.lobby.tech/category/case-de-sucesso/">Casos de sucesso</a></p>
-            <p><a href="/sobre-nos">Sobre nós</a></p>
-            <p><a href="/vem-pra-lobby">Vem pra Lobby</a></p>
-            <p><a href="https://blog.lobby.tech" target="_blank">Blog</a></p>
-            <p><a href="https://wa.me/551151998230" target="_blank">Contato</a></p>
-            <br>
-          </section>
-          <section class="col-6 col-lg-2">
-            <h2 class="font--md"><b>Legal</b></h2>
-            <p><a href="/politica-de-privacidade">Política de privacidade</a></p>
-            <p><a href="/termos-de-uso">Termos de uso</a></p>
-            <p><a href="/politica-de-devolucao-e-reembolso">Política de devolução e reembolso</a></p>
-            <br>
-          </section>
         </div>
         <div class="row" style="margin-top:40px">
           <div class="col-md-6">

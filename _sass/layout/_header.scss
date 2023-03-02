@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  z-index: 999;
+  z-index: 100;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -10,6 +10,45 @@
 
 .header__logo {
   width: 130px;
+  float: left;
+}
+
+.header__main-menu {
+  float: left;
+  position: relative;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.header__main-menu__li {
+  float: left;
+  padding: 10px 20px 0;
+}
+
+.header__main-menu__li:hover ul {
+  display: block;
+}
+
+.header__main-submenu {
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px #999;
+  display: none;
+  position: absolute;
+  padding: 20px;
+  background-color: white;
+  z-index: 200;
+}
+
+.header__main-submenu li {
+  list-style: none;
+}
+
+.header__main-submenu li a {
+  display: block;
+  padding: 10px;
+  white-space: nowrap;
 }
 
 .header__menu {
@@ -34,6 +73,10 @@
   }
 
   .header__menu--mobile {
-    display: list-item;
+    display: inherit;
+  }
+
+  .header__menu--only-mobile {
+    display: none;
   }
 }
