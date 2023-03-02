@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
+.main--header {
+  padding-top: 70px;
+}
+
 @media (min-width: 992px) {
   .main {
     overflow: auto;

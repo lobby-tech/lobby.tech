@@ -38,30 +38,32 @@
       {% include google_scripts_body.html %}
     {% endif %}
 
-    <header class="container header">
-      <a href="/">
-        <img src="/assets/images/lobby-logo.png" alt="Lobby Tech logo" class="header__logo">
-      </a>
-      <ul class="header__menu">
-        <li class="header__menu--mobile">
-          <a href="https://wa.me/551151998230" class="js-ga4-wa-btn-site" target="_blank">
-            <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="24">
-            (11) 5199-8230
-          </a>
-        </li>
-        <li>
-          <a href="https://calendly.com/caroline-460/30min" target="_blank">
-            🎧
-            <b>Agendar call</b>
-          </a>
-        </li>
-        <li class="header__menu--mobile">
-          <a href="https://app.lobby.tech">Login</a>
-        </li>
-      </ul>
+    <header class="header">
+      <div class="container">
+        <a href="/">
+          <img src="/assets/images/lobby-logo.png" alt="Lobby Tech logo" class="header__logo">
+        </a>
+        <ul class="header__menu">
+          <li class="header__menu--mobile">
+            <a href="https://wa.me/551151998230" class="js-ga4-wa-btn-site" target="_blank">
+              <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="24">
+              (11) 5199-8230
+            </a>
+          </li>
+          <li>
+            <a href="https://calendly.com/caroline-460/30min" target="_blank">
+              🎧
+              <b>Agendar call</b>
+            </a>
+          </li>
+          <li class="header__menu--mobile">
+            <a href="https://app.lobby.tech">Login</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <main class="main">
+    <main class="main main--header">
       {{ content }}
     </main>
 

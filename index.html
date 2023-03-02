@@ -16,16 +16,11 @@ layout: home
           Evite dor de cabeça na hora de comprar e enviar os kits e brindes personalizados da sua empresa,
           nós facilitamos todo processo pra você</h2>
         <br>
-        <div class="row">
-          <div class="col-12">
-            <p>
-              <a href="/monte-seu-kit" class="btn">
-                Monte seu kit 🎁
-              </a>
-            </p>
-            <br>
-          </div>
-        </div>
+        <p>
+          <a href="/monte-seu-kit" class="btn js-btn-catalog">
+            Monte seu kit 🎁
+          </a>
+        </p>
       </div>
     </div>
   </div>
@@ -278,7 +273,7 @@ layout: home
   <br>
   <br>
   <p>
-    <a href="/monte-seu-kit" class="btn">
+    <a href="/monte-seu-kit" class="btn js-btn-catalog">
       Monte seu kit agora
     </a>
   </p>
@@ -329,7 +324,7 @@ layout: home
         <h1 class="font--lg">Enviar kits com sua marca ficou fácil</h1>
         <h2 class="font--xl">Monte seu kit corporativo</h2>
         <p class="section-three__btn">
-          <a href="/monte-seu-kit" class="btn">
+          <a href="/monte-seu-kit" class="btn js-btn-catalog">
             Começar agora
           </a>
         </p>
@@ -358,5 +353,11 @@ layout: home
       loop: true,
       showCursor: false
     });
+
+    var params = new URLSearchParams(window.location.search);
+    var btnCatalog = document.getElementsByClassName('js-btn-catalog');
+    for (i = 0; i < btnCatalog.length; i++) {
+      btnCatalog[i].setAttribute('href', btnCatalog[i].getAttribute('href') + '?' + params);
+    }
   })();
 </script>

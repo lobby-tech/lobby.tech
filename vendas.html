@@ -13,6 +13,12 @@ layout: home
         <h2 class="font--md">
           Atraia mais prospects e aumente suas vendas com mimos e brindes personalizados que imprimem sua marca. Descubra como nossa plataforma de envio de presentes corporativos pode levar uma mensagem personalizada e ajudá-lo a se destacar da concorrência.
         </h2>
+        <br>
+        <p>
+          <a href="/monte-seu-kit" class="btn js-btn-catalog">
+            Monte seu kit 🎁
+          </a>
+        </p>
       </div>
     </div>
   </div>
@@ -55,7 +61,7 @@ layout: home
   </div>
   <br>
   <p>
-    <a href="/monte-seu-kit" class="btn">
+    <a href="/monte-seu-kit" class="btn js-btn-catalog">
       Monte seu kit
     </a>
   </p>
@@ -96,3 +102,13 @@ layout: home
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var btnCatalog = document.getElementsByClassName('js-btn-catalog');
+    for (i = 0; i < btnCatalog.length; i++) {
+      btnCatalog[i].setAttribute('href', btnCatalog[i].getAttribute('href') + '?' + params);
+    }
+  })();
+</script>
