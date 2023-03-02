@@ -15,7 +15,7 @@ layout: home
         </h2>
         <br>
         <p>
-          <a href="/monte-seu-kit" class="btn js-btn-catalog">
+          <a href="/monte-seu-kit?lp=marketing" class="btn js-btn-catalog">
             Monte seu kit 🎁
           </a>
         </p>
@@ -61,7 +61,7 @@ layout: home
   </div>
   <br>
   <p>
-    <a href="/monte-seu-kit" class="btn js-btn-catalog">
+    <a href="/monte-seu-kit?lp=marketing" class="btn js-btn-catalog">
       Monte seu kit
     </a>
   </p>
@@ -108,7 +108,7 @@ layout: home
     var params = new URLSearchParams(window.location.search);
     var btnCatalog = document.getElementsByClassName('js-btn-catalog');
     for (i = 0; i < btnCatalog.length; i++) {
-      btnCatalog[i].setAttribute('href', btnCatalog[i].getAttribute('href') + '?' + params);
+      btnCatalog[i].setAttribute('href', btnCatalog[i].getAttribute('href') + '&' + params);
     }
   })();
 </script>
