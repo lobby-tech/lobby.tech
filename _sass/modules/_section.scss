@@ -1,3 +1,14 @@
+.section-one {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section-two {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #d9fef7;
+}
+
 .section-three {
   position: relative;
   border-radius: 8px;
@@ -16,5 +27,9 @@
     position: absolute;
     top: 60px;
     right: 50px;
+  }
+
+  .section--right {
+      text-align: right;
   }
 }

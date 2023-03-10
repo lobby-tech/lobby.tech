@@ -13,17 +13,18 @@ layout: home
           Personalizados
         </h1>
         <h2 class="font--md">
-          Evite dor de cabeça na hora de comprar e enviar os kits e brindes personalizados da sua empresa, nós facilitamos todo processo pra você.</h2>
+          Evite dor de cabeça na hora de comprar e enviar os kits e brindes personalizados da sua empresa, nós facilitamos todo processo pra você.
+        </h2>
         <br>
         <p>
           <a href="/monte-seu-kit" class="btn js-btn-catalog">
             Monte seu kit 🎁
           </a>
         </p>
-        <br>
+        <br><br>
       </div>
       <div class="col-lg-5">
-        <img src="/assets/images/headline/bg-swag-kit-1.png" alt="swag kit" width="100%">
+        <img src="/assets/images/headline/bg-swag-kit-3.png" alt="swag kit" width="100%">
       </div>
     </div>
   </div>
@@ -149,7 +150,11 @@ layout: home
   </div>
 </section>
 
-<section class="section-one">
+<section class="section-one section--right">
+  {% include garantia-felicidade.html %}
+</section>
+
+<section class="section-two">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8 offset-lg-2">
@@ -174,14 +179,17 @@ layout: home
   </div>
   <br>
   <p>
-    <a href="/como-funciona" class="btn">
-      Como funciona
+    <a href="/precos" class="btn">
+      Ver preços
     </a>
   </p>
 </section>
 
 <section class="section-one">
   <div class="container">
+    {% include images-pinterest.html %}
+    <br>
+    <br>
     <h1 class="font--xl">Cases de sucesso</h1>
     <br>
     <div class="row">
@@ -205,6 +213,7 @@ layout: home
           </a>
         </p>
         <br>
+        <br>
       </aside>
       <aside class="col-md-4">
         <h2 class="font--lg"><b>Não é apenas um kit, é uma experiência</b></h2>
@@ -225,6 +234,7 @@ layout: home
             Ler na integra
           </a>
         </p>
+        <br>
         <br>
       </aside>
       <aside class="col-md-4">
@@ -248,14 +258,6 @@ layout: home
         </p>
       </aside>
     </div>
-    <br>
-    <br>
-    <a data-pin-do="embedUser"
-      data-pin-lang="pt"
-      data-pin-board-width="1280"
-      data-pin-scale-height="400"
-      data-pin-scale-width="240"
-      href="https://br.pinterest.com/lobbytech"></a>
   </div>
 </section>
 
@@ -333,7 +335,6 @@ layout: home
   </div>
 </section>
 
-<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 <script type="text/javascript">
   (function() {
     var params = new URLSearchParams(window.location.search);
