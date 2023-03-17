@@ -29,6 +29,10 @@ layout: home
 </div>
 
 <section class="section-one">
+  {% include customers-logo.html %}
+</section>
+
+<section class="section-two">
   <h1 class="font--xl">Seja presente 🎁 nos momentos que importam</h1>
   <div class="container">
     <div class="row">
@@ -88,15 +92,14 @@ layout: home
   </p>
 </section>
 
-<section class="section-two section--right">
-  {% include garantia-felicidade.html %}
-</section>
-
 <section class="section-one">
   <div class="container">
+    <div class="section--right">
+      {% include garantia-felicidade.html %}
+    </div>
+    <br><br><br>
     {% include images-pinterest.html %}
-    <br>
-    <br>
+    <br><br>
     <h1 class="font--xl">Cases de sucesso</h1>
     <br>
     <div class="row">

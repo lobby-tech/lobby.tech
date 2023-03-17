@@ -29,6 +29,10 @@ layout: home
 </div>
 
 <section class="section-one">
+  {% include customers-logo.html %}
+</section>
+
+<section class="section-two">
   <h1 class="font--xl">Surpreenda 🎁 seus participantes e fortaleça sua marca</h1>
   <br>
   <div class="container">
@@ -71,12 +75,12 @@ layout: home
   </p>
 </section>
 
-<section class="section-two section--right">
-  {% include garantia-felicidade.html %}
-</section>
-
 <section class="section-one">
   <div class="container">
+    <div class="section--right">
+      {% include garantia-felicidade.html %}
+    </div>
+    <br><br><br>
     {% include images-pinterest.html %}
   </div>
 </section>
