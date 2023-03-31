@@ -3,3 +3,5 @@ User-agent: *
 Allow: /
 Disallow: /monte-seu-kit
 Disallow: /pedido-enviado
+
+Sitemap: https://lobby.tech/sitemap.xml
