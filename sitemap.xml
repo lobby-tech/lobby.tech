@@ -2,89 +2,95 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lobby.tech/</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://lobby.tech/rh</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lobby.tech/marketing</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lobby.tech/vendas</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lobby.tech/customer-success</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://lobby.tech/como-funciona</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lobby.tech/armazenagem-e-envios</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lobby.tech/precos</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lobby.tech/lojinha-da-sua-marca</loc>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lobby.tech/perguntas-frequentes</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://lobby.tech/sobre-nos</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lobby.tech/vem-pra-lobby</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://lobby.tech/politica-de-privacidade</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lobby.tech/termos-de-uso</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lobby.tech/politica-de-devolucao-e-reembolso</loc>
-    <lastmod>2023-06-12</lastmod>
+    <lastmod>2023-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
