@@ -18,6 +18,19 @@ a:hover {
   color: inherit;
 }
 
+dialog {
+  position: fixed;
+  z-index: 100;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px #999;
+  padding:5px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0,0,0,0.6);
+}
+
 .padding-top-0 {
   padding-top: 0 !important;
 }
