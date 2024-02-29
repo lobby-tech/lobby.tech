@@ -1,0 +1,33 @@
+.plans-table {
+	width: 100%;
+}
+
+.plans-table td, .plans-table th {
+	width: 16.5%;
+	border: 1px solid #DDD;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 1.7em;
+}
+
+.plans-table td:first-child, .plans-table th:first-child {
+	width: 33%;
+}
+
+.plans-table--noborder {
+	border: 0 !important;
+	background-color: white !important;
+}
+
+.plans-table--spacer {
+	height: 33px;
+	background-color: white !important;
+}
+
+.plans-table tbody td:first-child {
+	text-align: left;
+}
+
+.plans-table tr:nth-child(odd) {
+    background-color: #F3F3F3;
+}
