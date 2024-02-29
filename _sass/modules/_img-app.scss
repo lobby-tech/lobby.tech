@@ -1,5 +1,9 @@
 .img-app {
-	width: 100%;
+	width: 90%;
 	border-radius: 12px;
-	box-shadow: 1px 2px 8px #DDD;
+	box-shadow: 1px 2px 6px #CCC;
+}
+
+.img-app--noborder {
+	box-shadow: none;
 }
