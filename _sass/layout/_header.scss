@@ -8,6 +8,23 @@
   box-shadow: 1px 1px 3px -2px #999;
 }
 
+.header__top-banner {
+  margin: -15px auto 15px;
+  padding: 3px 0;
+  background-color: #EC5855;
+  color: #FFF;
+  text-align: center;
+}
+
+.header__top-banner--new {
+  display: none;
+  padding: 1px 8px 2px;
+  background-color: #22007F;
+  border-radius: 15px;
+  color: #00F8C9;
+  font-size: 14px;
+}
+
 .header a {
   color: #000;
 }
@@ -82,5 +99,9 @@
 
   .header__menu--only-mobile {
     display: none;
+  }
+
+  .header__top-banner--new {
+    display: inline;
   }
 }
