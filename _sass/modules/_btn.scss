@@ -1,9 +1,12 @@
 .btn {
+  display: inline-block;
+  margin-bottom: 20px;
   border-radius: 7px;
   padding: 12px 20px;
   background-color: #220081;
   color: white;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -18,7 +21,7 @@
 }
 
 .btn--secondary {
-  border: 1px solid #BBB;
+  border: 1px solid #220081;
   background-color: white;
   color: #220081;
 }
@@ -27,3 +30,12 @@
   background-color: #E2DBF5;
   color: #220081;
 }
+
+@media (min-width: 992px) {
+  .btn {
+    white-space: normal;
+    display: inline;
+    margin-bottom: 0;
+  }
+}
+
