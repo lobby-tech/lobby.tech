@@ -63,10 +63,10 @@ layout: home
 		if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
 			dataLayer.push({
 				event: "onContactFormSubmit",
-				firstName: document.getElementById("firstname-1907ed9d-22d7-4c80-ac98-df144f20f7f0").getAttribute("value"),
-				lastName: document.getElementById("lastname-1907ed9d-22d7-4c80-ac98-df144f20f7f0").getAttribute("value"),
-				email: document.getElementById("email-1907ed9d-22d7-4c80-ac98-df144f20f7f0").getAttribute("value"),
-				mobilePhone: document.getElementById("phone-1907ed9d-22d7-4c80-ac98-df144f20f7f0").getAttribute("value")
+				firstName: document.getElementsByName("firstname")[0].getAttribute("value"),
+				lastName: document.getElementsByName("lastname")[0].getAttribute("value"),
+				email: document.getElementsByName("email")[0].getAttribute("value"),
+				mobilePhone: document.getElementsByName("phone")[0].getAttribute("value")
 			});
 		}
 	});
