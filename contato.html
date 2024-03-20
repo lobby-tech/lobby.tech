@@ -47,27 +47,24 @@ layout: home
         <br>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 				<script>
-					hbspt.forms.create({
-					region: "na1",
-					portalId: "20606287",
-						formId: "1907ed9d-22d7-4c80-ac98-df144f20f7f0"
+					document.addEventListener("DOMContentLoaded", function() {
+						hbspt.forms.create({
+							region: "na1",
+							portalId: "20606287",
+							formId: "1907ed9d-22d7-4c80-ac98-df144f20f7f0",
+							onFormSubmit: function($form) {
+						    window.dataLayer.push({
+									event: "onContactFormSubmit",
+									firstName: $form.elements['firstname'].value,
+									lastName: $form.elements['lastname'].value,
+									email: $form.elements['email'].value,
+									mobilePhone: $form.elements['phone'].value
+								});
+					    }
+						});
 					});
 				</script>
       </section>
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-	window.addEventListener('message', event => {
-		if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
-			dataLayer.push({
-				event: "onContactFormSubmit",
-				firstName: document.getElementsByName("firstname")[0].getAttribute("value"),
-				lastName: document.getElementsByName("lastname")[0].getAttribute("value"),
-				email: document.getElementsByName("email")[0].getAttribute("value"),
-				mobilePhone: document.getElementsByName("phone")[0].getAttribute("value")
-			});
-		}
-	});
-</script>
