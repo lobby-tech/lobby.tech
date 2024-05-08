@@ -148,7 +148,7 @@
             </a>
           </li>
           <li class="header__menu--mobile">
-            <a href="/contato" class="js-ga4-wa-btn-site">
+            <a href="javascript:void(0)" id="whatsappDialogOpen" class="js-ga4-wa-btn-site" >
               <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="24">
               WhatsApp
             </a>
@@ -159,6 +159,46 @@
         </ul>
       </div>
     </header>
+    <dialog id="whatsappDialog" style="width:800px;height:520px">
+      <p style="position:absolute;right:0;z-index:100;background-color:white">&nbsp;<a href="javascript:void(0)" id="whatsappDialogClose">Fechar X</a>&nbsp;</p>
+      <div style="padding: 30px">
+        <h1 class="font--xl">Contato por WhatsApp <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="48"></h1>
+        <br>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              hbspt.forms.create({
+                region: "na1",
+                portalId: "20606287",
+                formId: "31655c8c-7b28-4fc2-b4de-02ce4caf1dd5",
+                onFormSubmit: function($form) {
+                  window.dataLayer.push({
+                    event: "onContactFormSubmit",
+                    firstName: $form.elements['firstname'].value,
+                    lastName: $form.elements['lastname'].value,
+                    email: $form.elements['email'].value
+                  });
+                }
+              });
+            });
+          </script>
+      </div>
+    </dialog>
+    <script type="text/javascript">
+      (function() {
+        const dialog = document.getElementById("whatsappDialog");
+
+        const openDialog = document.getElementById("whatsappDialogOpen");
+        openDialog.addEventListener("click", () => {
+          dialog.showModal();
+        });
+
+        const closeButton = document.getElementById("whatsappDialogClose");
+        closeButton.addEventListener("click", () => {
+          dialog.close();
+        });
+      })();
+    </script>
 
     <main class="main main--header">
       {{ content }}
@@ -213,7 +253,7 @@
             <p>Seu parceiro ideal para criar experiências memoráveis para colaboradores, clientes e parceiros</p>
             <p><b>vendas@lobby.tech</b></p>
             <p>
-              <a href="https://wa.me/551151998230" class="js-ga4-wa-btn-site" target="_blank">
+              <a href="javascript:void(0);" onclick="document.getElementById('whatsappDialog').showModal();" class="js-ga4-wa-btn-site">
                 <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="24">
                 <b>WhatsApp</b>
               </a>
