@@ -1,8 +1,9 @@
 User-agent: *
 
 Allow: /
-Disallow: /monte-seu-kit
 Disallow: /forms
 Disallow: /pedido-enviado
+Disallow: /contato-enviado
+Disallow: /reuniao-agendada
 
 Sitemap: https://lobby.tech/sitemap.xml
