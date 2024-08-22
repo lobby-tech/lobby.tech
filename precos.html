@@ -8,7 +8,24 @@ layout: home
     <div class="row">
       <div class="col-12 col-lg-8 offset-lg-2">
         <h1 class="font--xxl">
-          Planos e preços 🛎️
+          Planos e preços <span onclick="showPricing();">🛎️</span>
+          <script type="text/javascript">
+            var showPricing = function() {
+              var consulting = document.getElementsByClassName('js-consulting');
+              for (var i = 0; i < consulting.length; i++) {
+                consulting[i].remove();
+                consulting[i].remove();
+                consulting[i].remove();
+              }
+
+              var price = document.getElementsByClassName('js-price');
+              for (var i = 0; i < price.length; i++) {
+                price[i].removeAttribute('style');
+                price[i].removeAttribute('style');
+                price[i].removeAttribute('style');
+              }
+            };
+          </script>
         </h1>
         <h2 class="font--md">
           Nossos planos e preços dos serviços são simples e transparentes
@@ -23,8 +40,7 @@ layout: home
           <p class="font--sm">Compra e envio simples sem armazenagem e serviços complementares</p>
           <p><span class="font--sm color--light">R$</span> <span class="font--xl">0</span></p>
           <p><span class="font--sm color--light">Valor por item manuseado e frete cobrados a parte</span></p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
+          <br>
           <p>
             <a href="/contato" class="btn section-plan--btn">
               Falar com vendas
@@ -36,9 +52,8 @@ layout: home
         <div class="section-plan">
           <h2 class="font--lg"><b>Essential 🙂</b></h2>
           <p class="font--sm">Empresas menores que não querem ter dor de cabeça de armazenagem</p>
-          <p><span class="font--sm">R$</span> <b class="font--lg">Consultar</b> <span class="font--sm">/ mês</span></p>
-          <p><span class="font--sm color--light">Incluso manuseio de até <b>500</b> itens por mês</span></p>
-          <p><span class="font--sm color--light">Valor do manuseio excedido e frete cobrados a parte</span></p>
+          <p><span class="font--sm color--light">R$</span> <b class="font--lg js-consulting">Consultar</b><b class="font--xl js-price" style="display:none">625</b> <span class="font--sm">/ mês</span><span class="font--xl">&nbsp;</span></p>
+          <p><span class="font--sm color--light">Valor por item manuseado e frete cobrados a parte</span></p>
           <br>
           <p>
             <a href="/contato" class="btn section-plan--btn">
@@ -51,9 +66,8 @@ layout: home
         <div class="section-plan">
           <h2 class="font--lg"><b>Pro 😄</b></h2>
           <p class="font--sm">Empresas maiores com departamentos e múltiplos times</p>
-          <p><span class="font--sm">R$</span> <b class="font--lg">Consultar</b> <span class="font--sm">/ mês</span></p>
-          <p><span class="font--sm color--light">Incluso manuseio de até <b>1500</b> itens por mês</span></p>
-          <p><span class="font--sm color--light">Valor do manuseio excedido e frete cobrados a parte</span></p>
+          <p><span class="font--sm color--light">R$</span> <b class="font--lg js-consulting">Consultar</b><b class="font--xl js-price" style="display:none">1.800</b> <span class="font--sm">/ mês</span><span class="font--xl">&nbsp;</span></p>
+          <p><span class="font--sm color--light">Valor por item manuseado e frete cobrados a parte</span></p>
           <br>
           <p>
             <a href="/contato" class="btn section-plan--btn">
@@ -66,9 +80,8 @@ layout: home
         <div class="section-plan">
           <h2 class="font--lg"><b>Enterprise 🤩</b></h2>
           <p class="font--sm">Grandes organizações e programas de presentes personalizados</p>
-          <p><span class="font--sm">R$</span> <b class="font--lg">Consultar</b> <span class="font--sm">/ mês</span></p>
-          <p><span class="font--sm color--light">Incluso manuseio de até <b>3000</b> itens por mês</span></p>
-          <p><span class="font--sm color--light">Valor do manuseio excedido e frete cobrados a parte</span></p>
+          <p><span class="font--sm color--light">R$</span> <b class="font--lg js-consulting">Consultar</b><b class="font--xl js-price" style="display:none">3.450</b> <span class="font--sm">/ mês</span><span class="font--xl">&nbsp;</span></p>
+          <p><span class="font--sm color--light">Valor por item manuseado e frete cobrados a parte</span></p>
           <br>
           <p>
             <a href="/contato" class="btn section-plan--btn">
