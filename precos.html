@@ -8,7 +8,7 @@ layout: home
     <div class="row">
       <div class="col-12 col-lg-8 offset-lg-2">
         <h1 class="font--xxl">
-          Planos e preços <span onclick="showPricing();">🛎️</span>
+          Planos e preços <span onclick="alert('Em atualização de preços...');/*showPricing();*/">🛎️</span>
           <script type="text/javascript">
             var showPricing = function() {
               var consulting = document.getElementsByClassName('js-consulting');
@@ -52,7 +52,7 @@ layout: home
         <div class="section-plan">
           <h2 class="font--lg"><b>Essential 🙂</b></h2>
           <p class="font--sm">Empresas menores que não querem ter dor de cabeça de armazenagem</p>
-          <p><span class="font--sm color--light">R$</span> <b class="font--lg js-consulting">Consultar</b><b class="font--xl js-price" style="display:none">625</b> <span class="font--sm">/ mês</span><span class="font--xl">&nbsp;</span></p>
+          <p><span class="font--sm color--light">R$</span> <b class="font--lg js-consulting">Consultar</b><b class="font--xl js-price" style="display:none">1.484</b> <span class="font--sm">/ mês</span><span class="font--xl">&nbsp;</span></p>
           <p><span class="font--sm color--light">Frete cobrado a parte</span></p>
           <br><br>
           <p>
@@ -66,7 +66,7 @@ layout: home
         <div class="section-plan">
           <h2 class="font--lg"><b>Pro 😄</b></h2>
           <p class="font--sm">Empresas maiores com departamentos e múltiplos times</p>
-          <p><span class="font--sm color--light">R$</span> <b class="font--lg js-consulting">Consultar</b><b class="font--xl js-price" style="display:none">1.800</b> <span class="font--sm">/ mês</span><span class="font--xl">&nbsp;</span></p>
+          <p><span class="font--sm color--light">R$</span> <b class="font--lg js-consulting">Consultar</b><b class="font--xl js-price" style="display:none">3.482</b> <span class="font--sm">/ mês</span><span class="font--xl">&nbsp;</span></p>
           <p><span class="font--sm color--light">Frete cobrado a parte</span></p>
           <br><br>
           <p>
@@ -80,7 +80,7 @@ layout: home
         <div class="section-plan">
           <h2 class="font--lg"><b>Enterprise 🤩</b></h2>
           <p class="font--sm">Grandes organizações e programas de presentes personalizados</p>
-          <p><span class="font--sm color--light">R$</span> <b class="font--lg js-consulting">Consultar</b><b class="font--xl js-price" style="display:none">3.450</b> <span class="font--sm">/ mês</span><span class="font--xl">&nbsp;</span></p>
+          <p><span class="font--sm color--light">R$</span> <b class="font--lg js-consulting">Consultar</b><b class="font--xl js-price" style="display:none">6.974</b> <span class="font--sm">/ mês</span><span class="font--xl">&nbsp;</span></p>
           <p><span class="font--sm color--light">Frete cobrado a parte</span></p>
           <br><br>
           <p>
@@ -143,10 +143,10 @@ layout: home
         </tr>
         <tr>
           <td>Desconto no valor dos brindes</td>
-          <td>0%</td>
-          <td>0%</td>
+          <td>❌</td>
+          <td>❌</td>
+          <td>❌</td>
           <td>3%</td>
-          <td>5%</td>
         </tr>
       </tbody>
       <tbody>
@@ -167,6 +167,13 @@ layout: home
           <td>✅</td>
           <td>✅</td>
           <td>✅</td>
+        </tr>
+        <tr>
+          <td>Processamento do envio</td>
+          <td>Até 3 dias úteis</td>
+          <td>Até 3 dias úteis</td>
+          <td>Até 3 dias úteis</td>
+          <td>Até 1 dias útil</td>
         </tr>
         <tr>
           <td>Armazenagem (<a href="https://docs.google.com/document/d/e/2PACX-1vRGFZ6Vy-nxNRpQA2bZ67TVpAWcZ8vuJW_T_0Mg-yRVEwRj1VydY76sfqZ8gclEovIXQx0bKYknGy2H/pub" target="_blank">detalhes</a>)</td>
@@ -191,10 +198,10 @@ layout: home
         </tr>
         <tr>
           <td>Desconto no valor do frete</td>
-          <td>0%</td>
-          <td>0%</td>
+          <td>❌</td>
+          <td>❌</td>
+          <td>❌</td>
           <td>5%</td>
-          <td>10%</td>
         </tr>
       </tbody>
       <tbody>
@@ -245,26 +252,12 @@ layout: home
           <td>✅</td>
         </tr>
         <tr>
-          <td>Integrações</td>
+          <td>Integrações via API</td>
           <td>❌</td>
           <td>❌</td>
           <td>✅</td>
           <td>✅</td>
         </tr>
-        <tr>
-          <td>Catálogo de brindes interno</td>
-          <td>❌</td>
-          <td>❌</td>
-          <td>❌</td>
-          <td>✅</td>
-        </tr>
-        <!-- <tr>
-          <td>Lojinha da sua marca (<a href="/lojinha-da-sua-marca">ver mais</a>)</td>
-          <td>❌</td>
-          <td>A consultar</td>
-          <td>A consultar</td>
-          <td>A consultar</td>
-        </tr> -->
       </tbody>
       <tbody>
         <tr class="plans-table--spacer">
@@ -280,10 +273,10 @@ layout: home
         </tr>
         <tr>
           <td>Suporte</td>
-          <td>Até 48 horas</td>
-          <td>Até 24 horas</td>
-          <td>Até 12 horas</td>
-          <td>Até 6 horas</td>
+          <td>Até 48 horas úteis</td>
+          <td>Até 24 horas úteis</td>
+          <td>Até 8 horas úteis</td>
+          <td>Até 2 horas úteis</td>
         </tr>
         <tr>
           <td>Time de onboarding</td>
@@ -296,14 +289,14 @@ layout: home
           <td>Gestor de sucesso do cliente</td>
           <td>❌</td>
           <td>❌</td>
-          <td>✅</td>
+          <td>A consultar</td>
           <td>✅</td>
         </tr>
         <tr>
           <td>Especialista em personalizados</td>
           <td>❌</td>
           <td>❌</td>
-          <td>3 brindes / ano</td>
+          <td>A consultar</td>
           <td>✅</td>
         </tr>
       </tbody>
