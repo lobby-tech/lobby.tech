@@ -1,7 +1,16 @@
 <div class="container">
   <h1 class="font--xl">+1.000 clientes atendidos</h1>
   <p>De startups a grandes empresas globais</p>
-  <br><br>
+  <p>
+    <img height="36" src="/assets/images/depoimentos/ifood.png" alt="iFood" style="filter:grayscale(100%);margin:10px 15px">
+    <img height="32" src="/assets/images/depoimentos/sicredi.png" alt="Sicredi" style="filter:grayscale(100%);margin:10px 15px">
+    <img height="24" src="/assets/images/depoimentos/rumolog.png" alt="Rumo Logística" style="filter:grayscale(100%);margin:10px 15px">
+    <img height="32" src="/assets/images/depoimentos/flash.png" alt="Flash" style="filter:grayscale(100%);margin:10px 15px">
+    <img height="36" src="/assets/images/depoimentos/caju.png" alt="Caju" style="filter:grayscale(100%);margin:10px 15px">
+    <img height="36" src="/assets/images/depoimentos/alura.png" alt="Alura" style="filter:grayscale(100%);margin:10px 15px">
+    <img height="36" src="/assets/images/depoimentos/willbank.png" alt="Will bank" style="filter:grayscale(100%);margin:10px 15px">
+  </p>
+  <!--
   <div class="row">
     <div class="col-6 col-md-3">
       <p><img height="50" src="/assets/images/depoimentos/ifood.png" alt="iFood"></p>
@@ -51,7 +60,7 @@
       <p><img height="37" src="/assets/images/depoimentos/alura.png" alt="Alura"></p>
       <br>
     </div>
-    <!--
+
     <div class="col-6 col-md-3">
       <p><img height="50" src="/assets/images/depoimentos/itau.png" alt="Itaú"></p>
       <br>
@@ -88,39 +97,12 @@
       <p><img height="35" src="/assets/images/depoimentos/amazon.png" alt="Amazon"></p>
       <br>
     </div>
-    -->
+  </div>
+  -->
+  <br>
+  <div class="row">
+    <div class="col-12 col-lg-6 offset-lg-3">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/dKYuZymUf_E?si=TwHPHDhmLDdY2NoV&amp;cc_load_policy=1&amp;cc_lang_pref=pt" title="Lobby Institucional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
-<br>
-<div class="container">
-  <p class="font--lg">
-    <a href="javascript:void(0)" id="videoDialogOpen">
-      <b>Ver vídeo ▶️</b>
-    </a>
-  </p>
-  <dialog id="videoDialog" style="width:800px;height:450px;overflow: hidden;">
-    <p style="position:absolute;right:0;z-index:100;background-color:white">&nbsp;<a href="javascript:void(0)" id="videoDialogClose">Fechar X</a>&nbsp;</p>
-    <iframe id="video" width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </dialog>
-</div>
-<script type="text/javascript">
-  (function() {
-    const dialog = document.getElementById("videoDialog");
-    const video = document.getElementById("video");
-    
-    dialog.addEventListener("close", (event) => {
-      video.setAttribute('src', '');
-    });
-
-    const openDialog = document.getElementById("videoDialogOpen");
-    openDialog.addEventListener("click", () => {
-      dialog.showModal();
-      video.setAttribute('src', 'https://www.youtube.com/embed/dKYuZymUf_E?autoplay=1&cc_load_policy=1&cc_lang_pref=pt');
-    });
-
-    const closeButton = document.getElementById("videoDialogClose");
-    closeButton.addEventListener("click", () => {
-      dialog.close();
-    });
-  })();
-</script>
