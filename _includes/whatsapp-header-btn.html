@@ -1,0 +1,19 @@
+<a href="javascript:void(0)" id="whatsappDialogOpen" class="btn btn--secondary js-ga4-wa-btn-site">
+  <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="24">
+  <span class="header__menu--mobile">WhatsApp</span>
+</a>
+<script type="text/javascript">
+(function() {
+  const dialog = document.getElementById("whatsappDialog");
+
+  const openDialog = document.getElementById("whatsappDialogOpen");
+  openDialog.addEventListener("click", () => {
+    dialog.showModal();
+  });
+
+  const closeButton = document.getElementById("whatsappDialogClose");
+  closeButton.addEventListener("click", () => {
+    dialog.close();
+  });
+})();
+</script>

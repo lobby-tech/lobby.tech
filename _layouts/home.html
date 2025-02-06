@@ -146,14 +146,8 @@
           </li>
         </ul>
         <ul class="header__menu">
-          <li>
-            <a href="javascript:void(0)" id="whatsappDialogOpen" class="js-ga4-wa-btn-site">
-              <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="24">
-              <span class="header__menu--mobile">WhatsApp</span>
-            </a>
-          </li>
           <li class="header__menu--mobile">
-            <a href="https://app.lobby.tech">Login</a>
+            <a href="https://app.lobby.tech">Acessar sua conta</a>
           </li>
         </ul>
       </div>
@@ -183,21 +177,6 @@
           </script>
       </div>
     </dialog>
-    <script type="text/javascript">
-      (function() {
-        const dialog = document.getElementById("whatsappDialog");
-
-        const openDialog = document.getElementById("whatsappDialogOpen");
-        openDialog.addEventListener("click", () => {
-          dialog.showModal();
-        });
-
-        const closeButton = document.getElementById("whatsappDialogClose");
-        closeButton.addEventListener("click", () => {
-          dialog.close();
-        });
-      })();
-    </script>
 
     <main class="main main--header">
       {{ content }}
@@ -209,13 +188,13 @@
         <div class="row">
           <section class="col-6 col-lg-3">
             <h2 class="font--md"><b>Plataforma</b></h2>
+            <p><a href="https://app.lobby.tech">Acessar sua conta</a></p>
             <p><a href="/como-funciona">Como funciona</a></p>
             <p><a href="/armazenagem-e-envios">Armazenagem e envios</a></p>
             <p><a href="/monte-seu-kit">Catálogo de brindes</a></p>
             <!-- <p><a href="/lojinha-da-sua-marca">Lojinha da sua marca</a></p> -->
             <p><a href="/precos">Planos</a></p>
             <p><a href="/perguntas-frequentes">Perguntas frequentes</a></p>
-            <p><a href="https://app.lobby.tech">Login</a></p>
             <br>
           </section>
           <section class="col-6 col-lg-3">
