@@ -34,12 +34,12 @@
 .btn--whatsapp {
   display: block;
   position: fixed;
-  bottom: 10px;
+  bottom: 5px;
   right: 20px;
 }
 
-.btn--whatsapp img {
-  width: 32px;
+.btn--whatsapp_text {
+  display: none;
 }
 
 
@@ -55,8 +55,8 @@
     right: 40px;
   }
 
-  .btn--whatsapp img {
-    width: 48px;
+  .btn--whatsapp_text {
+    display: inline;
   }
 }
 
