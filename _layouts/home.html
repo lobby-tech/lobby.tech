@@ -38,6 +38,31 @@
       {% include google_scripts_body.html %}
     {% endif %}
 
+    <dialog id="whatsappDialog" style="width:800px;height:520px">
+      <p style="position:absolute;right:0;z-index:100;background-color:white">&nbsp;<a href="javascript:void(0)" id="whatsappDialogClose">Fechar X</a>&nbsp;</p>
+      <div style="padding: 30px">
+        <h1 class="font--xl">Contato por WhatsApp <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="48"></h1>
+        <br>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              hbspt.forms.create({
+                region: "na1",
+                portalId: "20606287",
+                formId: "31655c8c-7b28-4fc2-b4de-02ce4caf1dd5",
+                onFormSubmit: function($form) {
+                  window.dataLayer.push({
+                    event: "onWhatsAppFormSubmit",
+                    firstName: $form.elements['firstname'].value,
+                    email: $form.elements['email'].value,
+                    mobilePhone: $form.elements['phone'].value
+                  });
+                }
+              });
+            });
+          </script>
+      </div>
+    </dialog>
     <header class="header">
       <!-- <aside class="header__top-banner js-top-banner">
         <span class="header__top-banner--new">Novo</span>
@@ -147,36 +172,17 @@
         </ul>
         <ul class="header__menu">
           <li class="header__menu--mobile">
-            <a href="https://app.lobby.tech">Acessar sua conta</a>
+            <a href="https://app.lobby.tech">👤 Login</a>
+          </li>
+          <li class="header__menu--mobile">
+            <a href="https://share.hsforms.com/2ae8j8JHURz2SRmOhpvETwQc9nwv" target="_blank">🙋‍♀️ Ajuda</a>
+          </li>
+          <li>
+            {% include whatsapp-header-btn.html %}
           </li>
         </ul>
       </div>
     </header>
-    <dialog id="whatsappDialog" style="width:800px;height:520px">
-      <p style="position:absolute;right:0;z-index:100;background-color:white">&nbsp;<a href="javascript:void(0)" id="whatsappDialogClose">Fechar X</a>&nbsp;</p>
-      <div style="padding: 30px">
-        <h1 class="font--xl">Contato por WhatsApp <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="48"></h1>
-        <br>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-          <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              hbspt.forms.create({
-                region: "na1",
-                portalId: "20606287",
-                formId: "31655c8c-7b28-4fc2-b4de-02ce4caf1dd5",
-                onFormSubmit: function($form) {
-                  window.dataLayer.push({
-                    event: "onWhatsAppFormSubmit",
-                    firstName: $form.elements['firstname'].value,
-                    email: $form.elements['email'].value,
-                    mobilePhone: $form.elements['phone'].value
-                  });
-                }
-              });
-            });
-          </script>
-      </div>
-    </dialog>
 
     <main class="main main--header">
       {{ content }}
@@ -188,7 +194,8 @@
         <div class="row">
           <section class="col-6 col-lg-3">
             <h2 class="font--md"><b>Plataforma</b></h2>
-            <p><a href="https://app.lobby.tech">Acessar sua conta</a></p>
+            <p><a href="https://app.lobby.tech">👤 Login</a></p>
+            <p><a href="https://app.lobby.tech">🙋‍♀️ Ajuda</a></p>
             <p><a href="/como-funciona">Como funciona</a></p>
             <p><a href="/armazenagem-e-envios">Armazenagem e envios</a></p>
             <p><a href="/monte-seu-kit">Catálogo de brindes</a></p>
@@ -230,12 +237,6 @@
             <br>
             <p>Seu parceiro ideal para criar experiências memoráveis para colaboradores, clientes e parceiros</p>
             <p><b>vendas@lobby.tech</b></p>
-            <p>
-              <a href="javascript:void(0);" onclick="document.getElementById('whatsappDialog').showModal();" class="js-ga4-wa-btn-site">
-                <img src="/assets/images/whatsapp-icon.png" alt="WhatsApp" width="24">
-                <b>WhatsApp</b>
-              </a>
-            </p>
             <br>
           </div>
           <div class="col-lg-6" style="text-align:right">

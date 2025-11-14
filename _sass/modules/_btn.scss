@@ -31,11 +31,32 @@
   color: #220081;
 }
 
+.btn--whatsapp {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+.btn--whatsapp img {
+  width: 32px;
+}
+
+
 @media (min-width: 992px) {
   .btn {
     white-space: normal;
     display: inline;
     margin-bottom: 0;
+  }
+
+  .btn--whatsapp {
+    bottom: 40px;
+    right: 40px;
+  }
+
+  .btn--whatsapp img {
+    width: 48px;
   }
 }
 
